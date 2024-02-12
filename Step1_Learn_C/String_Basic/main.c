@@ -12,7 +12,7 @@ void learn_string_definition()
 void learn_size_of_string()
 {
     char a[] = "Hello";
-    printf("size of a is %d\n", sizeof(a));
+    printf("Size of a[] is %d\n", sizeof(a));
     /* It shows that the size of 'a' is 6, but we see it only
        has five letter. Do you know why? 
        
@@ -21,6 +21,9 @@ void learn_size_of_string()
 
        PS: In C, we use 0 (zero) to represent 'NULL'.
     */
+    char b[64] = "Kitty";
+    printf("Size of b[] is %d\n", sizeof(b));
+    /* Even b[] only has 5 letters, it's actual size is 64 because of our explicit definition. */
 }
 
 void learn_string_and_char()
@@ -59,31 +62,60 @@ void learn_string_array()
     print_string_array(lines2, 3);
 }
 
-void learn_string_relevant_api()
+void learn_string_copy()
 {
     char a1[9] = "abc10086";
-    char a2[9];
+    char a2[9] = "haha";
     strcpy_s(a2, sizeof(a2), a1); /* copy string */
-    printf("a2 is %s\n", a2);
+    printf("After copying, a2 is %s\n", a2);
+}
 
-    char a3[9] = "abc10087";
-    if (strcmp(a1, a3))
+void learn_string_compare()
+{
+    char s1[9] = "abc10086";
+    char s2[9] = "abc10087";
+    /* We cannot write 's1 == s2' to compare an char array. It's not effective in C. 
+       We use strcmp() to compare two string.
+       (1) if s1 == s2, it return 0;
+       (2) if s1 < s2, it return -1;
+       (3) if s1 > s2, it return 1. 
+     */
+    if (strcmp(s1, s2) == 0)
     {
-
+        printf("s1 is same as s2.\n");
     }
     else
     {
-
+        printf("s1 is NOT same as s2.\n");
     }
 }
 
+void learn_string_concatenate()
+{
+    char s1[128] = "Hello";
+    char s2[128] = "Kitty";
+    strcat_s(s1, sizeof(s1), s2);
+    printf("After concatenating, s1 is %s\n", s1);
+}
+
+void learn_string_length()
+{
+    char s1[128] = "Hello";
+    printf("Size of s1 is %u\n", sizeof(s1));
+    printf("Length of s1 is %u\n", strlen(s1));
+}
 
 int main()
 {
-    //learn_string_definition();
-    //learn_size_of_string();
-    //learn_string_and_char();
-    //learn_string_array();
-    learn_string_relevant_api();
+    learn_string_definition();
+    learn_size_of_string();
+    learn_string_and_char();
+    learn_string_array();
+
+    /* Some API to handle string. See <string.h> for more details. */
+    learn_string_copy();
+    learn_string_compare();
+    learn_string_concatenate();
+    learn_string_length();
     return 0;
 }

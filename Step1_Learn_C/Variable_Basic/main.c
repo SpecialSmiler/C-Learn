@@ -45,6 +45,12 @@ void learn_signed_and_unsigned()
     unsigned int i1 = -1; // what about assigning -1 to an 'unsigned int'?
     printf("i1=%d\n", i1); // run the code and see what will be printed
     printf("i1=%u\n", i1); // ditto
+    int i2 = i1;
+    printf("i2=%d\n", i2);
+    printf("i2=%u\n", i2);
+    /* If you specify '%d' to printf(), it will print the number as 'int'. 
+       And if you specify '%u' to printf(), it will print the number as 'unsigned int'.
+       So, printf() doesn't care about the original type of the number. */
 }
 
 void learn_literal()
