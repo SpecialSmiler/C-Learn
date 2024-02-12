@@ -42,6 +42,8 @@ unsigned char...
 
 为什么字符串解析错的时候会出现“烫烫烫”？
 
+一些字符串操作，strcmp, strcpy
+
 
 
 ## 结构体 (Struct)
