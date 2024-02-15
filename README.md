@@ -94,17 +94,19 @@ unsigned char...
 
 # 番外-Visual Studio的使用
 
-一些快捷键，See [Keyboard shortcuts in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
+- 一些快捷键：[Keyboard shortcuts in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio?view=vs-2022)
 
-项目的配置
+- 调试相关：https://learn.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour
 
-如何打断点调试
+  - 如何打断点调试
 
-如何查看变量，Auto、Local、Watch
+    如何查看变量，Auto、Local、Watch
 
-如何查看调用栈（Call Stack）
+    如何查看调用栈（Call Stack）
 
-如何查看内存（Memory）
+    如何查看内存（Memory）
+
+- 项目的配置
 
 
 
