@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dynamic_Memory_Basic", "Dyn
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Error_Handling_Basic", "Error_Handling_Basic\Error_Handling_Basic.vcxproj", "{812AC50E-2C69-463D-A7F7-BEEBAF81BE10}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Operator_Basic", "Operator_Basic\Operator_Basic.vcxproj", "{5F37219F-7A6F-40DD-A3DB-A0F0A655E65C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{812AC50E-2C69-463D-A7F7-BEEBAF81BE10}.Release|x64.Build.0 = Release|x64
 		{812AC50E-2C69-463D-A7F7-BEEBAF81BE10}.Release|x86.ActiveCfg = Release|Win32
 		{812AC50E-2C69-463D-A7F7-BEEBAF81BE10}.Release|x86.Build.0 = Release|Win32
+		{5F37219F-7A6F-40DD-A3DB-A0F0A655E65C}.Debug|x64.ActiveCfg = Debug|x64
+		{5F37219F-7A6F-40DD-A3DB-A0F0A655E65C}.Debug|x64.Build.0 = Debug|x64
+		{5F37219F-7A6F-40DD-A3DB-A0F0A655E65C}.Debug|x86.ActiveCfg = Debug|Win32
+		{5F37219F-7A6F-40DD-A3DB-A0F0A655E65C}.Debug|x86.Build.0 = Debug|Win32
+		{5F37219F-7A6F-40DD-A3DB-A0F0A655E65C}.Release|x64.ActiveCfg = Release|x64
+		{5F37219F-7A6F-40DD-A3DB-A0F0A655E65C}.Release|x64.Build.0 = Release|x64
+		{5F37219F-7A6F-40DD-A3DB-A0F0A655E65C}.Release|x86.ActiveCfg = Release|Win32
+		{5F37219F-7A6F-40DD-A3DB-A0F0A655E65C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

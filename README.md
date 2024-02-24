@@ -90,6 +90,8 @@ unsigned char...
 
 运算符优先级
 
+https://learn.microsoft.com/zh-cn/cpp/c-language/precedence-and-order-of-evaluation?view=msvc-170
+
 
 
 # 番外-Visual Studio的使用
